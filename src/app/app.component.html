@@ -1,0 +1,28 @@
+<app-header></app-header>
+<br>
+<h4 class="title"></h4>
+<div class="grid">
+    <app-card [datoEntrante]="card" *ngFor="let card of cards"></app-card>
+</div>
+<div class="container">
+    <h4 class="title">Formulario de Envio <p>(completa todos los campos)</p></h4>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Ciudad">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Estado">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Municipio">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Colonia">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Descripcion de la casa">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Nombre completo de quien lo recibe">
+    </mat-form-field>
+    <button mat-raised-button color="" class="btn-primary" style="background-color: #ed2507; color: aliceblue;">Enviar Datos para comprar</button>
+</div>
